@@ -5,7 +5,7 @@ let stray_kids = []
 form.onsubmit = (e) => {
     e.preventDefault()
     let str_kid = {
-        id: Math.random(),
+        id: Math.random().toFixed(4),
         name: new FormData(form).get('name'),
         age: 2024-new FormData(form).get('age')
     }
@@ -47,7 +47,7 @@ function reload(arr, place) {
         action.append(list, delet)
 
         delet.onclick = () => {
-            stray_kids = stray_kids.filter(el => el.id !== item.id)
+            arr = stray_kids.filter(el => el.id !== item.id)
             dibil.remove()
         }
     }
