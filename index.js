@@ -7,7 +7,7 @@ form.onsubmit = (e) => {
     let str_kid = {
         id: Math.random(),
         name: new FormData(form).get('name'),
-        age: new FormData(form).get('age')
+        age: 2024-new FormData(form).get('age')
     }
 
     if (str_kid.name.trim() !== "") {
